@@ -1,0 +1,26 @@
+{
+    "name": "jaggery",
+    "displayName": "jaggery-syntax",
+    "description": ".jag",
+    "version": "0.0.1",
+    "publisher": "STBaranovAN",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "jaggery",
+            "aliases": ["jaggery", "jagger"],
+            "extensions": [".jag"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "jaggery",
+            "scopeName": "source.jaggery",
+            "path": "./syntaxes/jaggery.tmLanguage.json"
+        }]
+    }
+}
