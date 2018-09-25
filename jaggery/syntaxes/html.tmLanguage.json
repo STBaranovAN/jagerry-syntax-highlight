@@ -20,6 +20,16 @@
 	},
 	"patterns": [
 		{
+			"begin": "<%",
+			"end": "%>",
+			"name": "meta.embedded.line.js",
+			"patterns": [
+				{
+					"include": "source.js"
+				}
+			]
+		},
+		{
 			"begin": "(<\\?)(xml)",
 			"captures": {
 				"1": {
