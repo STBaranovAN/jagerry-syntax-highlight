@@ -6,7 +6,7 @@
 	],
 	"version": "https://github.com/textmate/html.tmbundle/commit/6a6fb2967e2f562a634fca97d18018104d428f1c",
 	"name": "HTML",
-	"scopeName": "text.html.basic",
+	"scopeName": "jaggery.html",
 	"injections": {
 		"R:text.html - (comment.block, text.html meta.embedded, meta.tag.*.*.html, meta.tag.*.*.*.html, meta.tag.*.*.*.*.html)": {
 			"comment": "Uses R: to ensure this matches after any other injections.",
@@ -19,16 +19,6 @@
 		}
 	},
 	"patterns": [
-		{
-			"begin": "<%",
-			"end": "%>",
-			"name": "meta.embedded.line.js",
-			"patterns": [
-				{
-					"include": "source.js"
-				}
-			]
-		},
 		{
 			"begin": "(<\\?)(xml)",
 			"captures": {
@@ -91,6 +81,9 @@
 		},
 		{
 			"include": "#entities"
+		},
+		{
+			"include": "#jaggery-syntax"
 		}
 	],
 	"repository": {
@@ -1909,7 +1902,7 @@
 													"name": "punctuation.definition.tag.begin.html"
 												},
 												"2": {
-													"name": "text.html.basic"
+													"name": "jaggery.html"
 												}
 											},
 											"patterns": [
@@ -1931,10 +1924,10 @@
 												{
 													"begin": "(?!\\G)",
 													"end": "(?=</(?i:script))",
-													"name": "text.html.basic",
+													"name": "jaggery.html",
 													"patterns": [
 														{
-															"include": "text.html.basic"
+															"include": "jaggery.html"
 														}
 													]
 												}
@@ -2569,6 +2562,19 @@
 					]
 				}
 			]
+		},
+		"jaggery-syntax": {
+			"begin": "<%",
+			"end": "%>",
+			"patterns": [
+				{
+					"include": "source.js"
+				}
+			]
+		},
+		"jaggery-code-block": {
+			"name": "keyword.control.cshtml",
+			"match": "(<%).*(%>)?"
 		}
 	}
 }
