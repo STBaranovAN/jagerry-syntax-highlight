@@ -1,7 +1,8 @@
 {
   "name": "jaggery",
   "displayName": "jaggery-syntax",
-  "description": ".jag",
+  "description": "Highlighting for jaggery syntax in .jag files",
+  "icon": "images/jaggeryjs.png",
   "version": "0.0.1",
   "publisher": "STBaranovAN",
   "engines": {
