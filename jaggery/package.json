@@ -72,6 +72,10 @@
         "language": "html",
         "path": "./snippets/html.snippets.json"
       }
-    ]
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/STBaranovAN/jagerry-syntax-highlight.git"
+    }
   }
 }
