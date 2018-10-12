@@ -4,6 +4,10 @@
   "description": "Syntax highlighting for jaggery syntax in *.jag files",
   "icon": "images/jaggeryjs.png",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/STBaranovAN/jagerry-syntax-highlight.git"
+  },
   "publisher": "STBaranovAN",
   "engines": {
     "vscode": "^1.27.0"
@@ -72,10 +76,6 @@
         "language": "html",
         "path": "./snippets/html.snippets.json"
       }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/STBaranovAN/jagerry-syntax-highlight.git"
-    }
+    ]
   }
 }
