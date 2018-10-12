@@ -1,4 +1,4 @@
-# Project Title
+# Jaggery Syntax Highlighting
 
 Plugin for Jaggery source files(*.jag) syntax highlighting
 
@@ -15,7 +15,7 @@ Just install from market or copy project from github. In second case copy extens
 
 ## Versioning
 
-For the versions available, see the [tags on this repository](https://github.com/STBaranovAN/jagerry-syntax-highlight/tree/master/jaggery). 
+For the versions available, see the [tags on this repository](https://github.com/STBaranovAN/jagerry-syntax-highlight/tree/master/jaggery/tags). 
 
 ## Authors
 
